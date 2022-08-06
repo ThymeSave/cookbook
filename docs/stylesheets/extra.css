@@ -1,0 +1,22 @@
+:root > * {
+    --md-primary-fg-color: #1d9e79;
+    --md-default-bg-color: #2c2c2c;
+    --md-typeset-color: white;
+    --md-default-fg-color--light: white;
+    --md-default-fg-color--lighter: white;
+    --md-accent-fg-color: white;
+    --md-typeset-a-color: #37caa0;
+}
+
+.mermaid {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.md-header,
+.md-tabs {
+    background: #0c7c5c;
+}
+
+.md-tabs__link {
+    opacity: .95;
+}
