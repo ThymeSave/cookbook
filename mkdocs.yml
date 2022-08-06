@@ -1,0 +1,42 @@
+site_name: ThymeSave Cookbook
+docs_dir: docs
+
+repo_url: https://github.com/thymesave/cookbook
+repo_name: thymesave/cookbook
+edit_uri: edit/main/docs/
+
+theme:
+  icon:
+    repo: fontawesome/brands/github
+  logo: assets/images/logo.svg
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.tracking
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search

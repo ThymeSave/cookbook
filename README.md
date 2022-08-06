@@ -1,11 +1,24 @@
 Cookbook
 ===
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
-
+[![pre-commit](https://img.shields.io/badge/%E2%9A%93%20%20pre--commit-enabled-success)](https://pre-commit.com/)
 
 Documentation for everything around ThymeSave.
 
-## Development
+# Development
+
+## Required tools
+
+- Python 3
+- pip3
+
+## Setup
+
+To set up the project locally:
+
+1. Install dependencies: `pip3 install -r requirements.txt`
+2. Serve documentation: `mkdocs serve`
+
 ## Commit Message Convention
 
 This repository follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)

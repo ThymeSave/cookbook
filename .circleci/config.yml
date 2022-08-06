@@ -1,0 +1,45 @@
+version: 2.1
+
+executors:
+  node:
+    docker:
+      - image: cimg/node:lts
+  python:
+    docker:
+      - image: cimg/python:3.9
+
+jobs:
+  build:
+    executor: python
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: pip3 install -r requirements.txt
+      - run:
+          name: Build documentation with mkdocs
+          command: mkdocs build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - site/
+  deploy-docs:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          name: Publish documentation to gh pages
+          command: |
+            git config user.email "thymesave-bot@thymesave.github.io"
+            git config user.name "thymesave-bot"
+            npx gh-pages@2.0.1 --dist site/ --message "docs: Update github pages [ci skip]"
+
+workflows:
+  publish-docs:
+    jobs:
+      - build
+      - deploy-docs:
+          requires:
+            - build
