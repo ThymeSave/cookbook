@@ -23,6 +23,8 @@ jobs:
           root: .
           paths:
             - site/
+      - store_artifacts:
+          path: site/
   deploy-docs:
     executor: node
     steps:
@@ -43,3 +45,7 @@ workflows:
       - deploy-docs:
           requires:
             - build
+          filters:
+            branches:
+              only:
+                - main
