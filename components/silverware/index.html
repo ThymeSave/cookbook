@@ -373,6 +373,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../auth0/" class="md-nav__link">
+        Auth0
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../couchdb/" class="md-nav__link">
         CouchDB
       </a>
@@ -410,9 +424,54 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Silverware
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Silverware
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-angular" class="md-nav__link">
+    Why Angular?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-concepts-ideology" class="md-nav__link">
+    Basic concepts / ideology
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-resources" class="md-nav__link">
+    Further resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -713,6 +772,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-angular" class="md-nav__link">
+    Why Angular?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-concepts-ideology" class="md-nav__link">
+    Basic concepts / ideology
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-resources" class="md-nav__link">
+    Further resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -730,9 +818,71 @@
 
 
 <h1 id="silverware">Silverware</h1>
-<blockquote>
-<p>TBD</p>
-</blockquote>
+<p>Silverware is the hart of ThymeSave.</p>
+<p>It contains most of the logic, party split into separate packages allowing easier modularization:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Package</th>
+<th align="left">Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">@thymesave/core</td>
+<td align="left">models, API definitions</td>
+</tr>
+<tr>
+<td align="left">@thymesave/translations</td>
+<td align="left">translations and matching functionality</td>
+</tr>
+<tr>
+<td align="left">@thymesave/ingredients</td>
+<td align="left">ingredient parsing, mapping and definitions</td>
+</tr>
+<tr>
+<td align="left">@thymesave/plugin</td>
+<td align="left">Plugin functionality for extending ThymeSave easily</td>
+</tr>
+</tbody>
+</table>
+<p>The frontend is completely written in TypeScript and Angular.</p>
+<h2 id="why-angular">Why Angular?</h2>
+<p>Angular is a battle proven framework we use it in combination with Angular Material, which provides great accessibility
+and a few handy components out of the box.</p>
+<p>Also, with Material Design we already have a design system that works and don't have to reinvent the wheel.</p>
+<p>To round the angular toolbox  also Angular Flex is used, providing Flexbox layouts via directives.</p>
+<h2 id="basic-concepts-ideology">Basic concepts / ideology</h2>
+<ul>
+<li>Don't cache database stuff explicitly</li>
+<li>PouchDB is used as storage layer which gives great performance with IndexedDB</li>
+<li>A store layer is explicitly not added, reducing complexity and possible points of failures</li>
+<li>The npm packages<ul>
+<li>are as loosely coupled as possible</li>
+<li>have high test coverage, covering also most edge cases</li>
+</ul>
+</li>
+<li>The angular part<ul>
+<li>contains test where it adds value, we don't have a coverage goal here (yet)</li>
+<li>is split into components where suitable</li>
+<li>utilizes best practices where ever it makes sense, we keep it open to make own design decisions that might not be
+  compliant with "the angular way"</li>
+</ul>
+</li>
+<li>We use observables (RxJS) and TypeScript features where ever possible<ul>
+<li>promises are just used e.g. in plugins to make the entry easier for plugin developers OR if not otherwise possible</li>
+</ul>
+</li>
+</ul>
+<h2 id="further-resources">Further resources</h2>
+<ul>
+<li><a href="https://angular.io">Angular</a></li>
+<li><a href="https://material.angular.io/">Angular Material</a></li>
+<li><a href="https://github.com/angular/flex-layout">Angular Flex</a></li>
+<li><a href="https://pouchdb.com/">PouchDB</a></li>
+<li><a href="https://rxjs.dev/">RxJS</a></li>
+<li><a href="https://github.com/thymesave/silverware">GitHub repository</a></li>
+</ul>
 
               
             </article>

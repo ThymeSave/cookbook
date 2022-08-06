@@ -371,6 +371,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../auth0/" class="md-nav__link">
+        Auth0
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -382,9 +396,47 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          CouchDB
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         CouchDB
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    Authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-resources" class="md-nav__link">
+    Further resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -713,6 +765,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    Authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-resources" class="md-nav__link">
+    Further resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -730,9 +804,23 @@
 
 
 <h1 id="couchdb">CouchDB</h1>
+<p><a href="https://couchdb.apache.org/">CouchDB</a> is a clusterable, syncable document-based database system.</p>
+<p>In combination with <a href="https://pouchdb.com/">PouchDB</a> in the frontend and added authentication through funnel it is a robust offline-first
+solution.</p>
+<p>Its de facto the only solution that works for our use case and is free and open source.</p>
+<h2 id="authentication">Authentication</h2>
+<p>Authentication is offloaded at funnel. JWT configuration with CouchDB is everything but straight forward,
+and having a explicit reverse proxy gives greater control and reduces surface for attacks.</p>
+<p>e.g. limitation of the user to its own database already on request level</p>
 <blockquote>
-<p>TBD</p>
+<p>This also means CouchDB should not be exposed over the network in any case, which
+would have fatal consequences due to basically an "admin party mode"</p>
 </blockquote>
+<h2 id="further-resources">Further resources</h2>
+<ul>
+<li><a href="https://couchdb.com/">CouchDB</a></li>
+<li><a href="https://pouchdb.com/">PouchDB</a></li>
+</ul>
 
               
             </article>
@@ -748,7 +836,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: High level overview" rel="prev">
+        <a href="../auth0/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Auth0" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -757,7 +845,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              High level overview
+              Auth0
             </div>
           </div>
         </a>
