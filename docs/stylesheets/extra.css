@@ -6,6 +6,7 @@
     --md-default-fg-color--lighter: white;
     --md-accent-fg-color: white;
     --md-typeset-a-color: #37caa0;
+    --md-code-bg-color: rgba(255, 255, 255, .8);
 }
 
 .mermaid {
@@ -19,4 +20,28 @@
 
 .md-tabs__link {
     opacity: .95;
+}
+
+table img {
+    width: 100%;
+}
+
+table,
+thead,
+tbody {
+    width: 100%;
+}
+
+table {
+    display: table;
+}
+
+.color-tile {
+    width: 30px;
+    height: 30px;
+    border: 1px dotted white;
+}
+
+.md-typeset code {
+    padding: 2px;
 }
