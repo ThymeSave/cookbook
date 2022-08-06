@@ -11,6 +11,7 @@ repo_name: thymesave/cookbook
 edit_uri: edit/main/docs/
 
 theme:
+  font: false
   icon:
     repo: fontawesome/brands/github
   logo: assets/images/logo.svg
@@ -20,6 +21,7 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.tracking
+    - navigation.expand
 
 markdown_extensions:
   - pymdownx.superfences:
@@ -27,6 +29,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
 
 plugins:
   - search

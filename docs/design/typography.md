@@ -1,0 +1,17 @@
+# Typography
+
+## Font
+
+The fallback stack is used so every OS uses the default font most familiar to the user.
+
+With CSS this looks e.g. like this:
+
+```css
+body {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+```
+
+## Font size
+
+Font size can vary between applications as long the application itself is consistent about sizing.
