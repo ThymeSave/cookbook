@@ -20,13 +20,13 @@ and a few handy components out of the box.
 
 Also, with Material Design we already have a design system that works and don't have to reinvent the wheel.
 
-To round the angular toolbox  also Angular Flex is used, providing Flexbox layouts via directives.
+To round the angular toolbox also Angular Flex is used, providing Flexbox layouts via directives.
 
 ## Basic concepts / ideology
 
 - Don't cache database stuff explicitly
-  - PouchDB is used as storage layer which gives great performance with IndexedDB
-  - A store layer is explicitly not added, reducing complexity and possible points of failures
+    - PouchDB is used as storage layer which gives great performance with IndexedDB
+    - A store layer is explicitly not added, reducing complexity and possible points of failures
 - The npm packages
     - are as loosely coupled as possible
     - have high test coverage, covering also most edge cases
