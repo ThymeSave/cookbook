@@ -851,12 +851,14 @@
 <p>Angular is a battle proven framework we use it in combination with Angular Material, which provides great accessibility
 and a few handy components out of the box.</p>
 <p>Also, with Material Design we already have a design system that works and don't have to reinvent the wheel.</p>
-<p>To round the angular toolbox  also Angular Flex is used, providing Flexbox layouts via directives.</p>
+<p>To round the angular toolbox also Angular Flex is used, providing Flexbox layouts via directives.</p>
 <h2 id="basic-concepts-ideology">Basic concepts / ideology</h2>
 <ul>
-<li>Don't cache database stuff explicitly</li>
+<li>Don't cache database stuff explicitly<ul>
 <li>PouchDB is used as storage layer which gives great performance with IndexedDB</li>
 <li>A store layer is explicitly not added, reducing complexity and possible points of failures</li>
+</ul>
+</li>
 <li>The npm packages<ul>
 <li>are as loosely coupled as possible</li>
 <li>have high test coverage, covering also most edge cases</li>
