@@ -36,6 +36,7 @@ jobs:
           command: |
             git config user.email "thymesave-bot@thymesave.github.io"
             git config user.name "thymesave-bot"
+            echo "docs.thymesave.app" > site/CNAME
             npx gh-pages@2.0.1 --dist site/ --message "docs: Update github pages [ci skip]"
 
 workflows:
