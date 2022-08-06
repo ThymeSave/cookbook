@@ -15,11 +15,17 @@ availability as one of the top priorities this should rarely be the case regardl
 
 ## Provider
 
-Currently, the Oracle Cloud Free Tier is used, which allows to run it as a cloud based service completely for free.
+### Funnel & CouchDB
+
+Currently, the Oracle Cloud Free Tier is used for CouchDB & funnel, which allows to run it as a cloud based service completely for free.
 
 We are really not happy with Oracle because of the terrible support and limits, so if you like the project and want to
 help
 us feel free to suggest other solutions/providers!
+
+### Silverware
+
+For silverware we use the awesome CloudFlare Pages providing preview environments and also power the live page!
 
 ## Disclaimer
 
