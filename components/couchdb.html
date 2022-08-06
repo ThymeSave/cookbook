@@ -6,21 +6,25 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Documentation around ThymeSave">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+        <meta name="author" content="ThymeSave Team and Community">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
     
     
       
-        <title>Add new ingredient category - ThymeSave Cookbook</title>
+        <title>CouchDB - ThymeSave Cookbook</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -36,7 +40,7 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#add-new-ingredient-category" class="md-skip">
+        <a href="#couchdb" class="md-skip">
           Skip to content
         </a>
       
@@ -78,9 +82,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="ThymeSave Cookbook" class="md-header__button md-logo" aria-label="ThymeSave Cookbook" data-md-component="logo">
+    <a href="../index.html" title="ThymeSave Cookbook" class="md-header__button md-logo" aria-label="ThymeSave Cookbook" data-md-component="logo">
       
-  <img src="../../../../assets/images/logo.svg" alt="logo">
+  <img src="../assets/images/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -96,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Add new ingredient category
+              CouchDB
             
           </span>
         </div>
@@ -193,26 +197,10 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../../.." class="md-tabs__link">
+    <a href="../index.html" class="md-tabs__link">
       Home
     </a>
   </li>
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../../components/" class="md-tabs__link">
-        Components
-      </a>
-    </li>
-  
 
       
         
@@ -226,7 +214,23 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../" class="md-tabs__link md-tabs__link--active">
+      <a href="index.html" class="md-tabs__link md-tabs__link--active">
+        Components
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../development/index.html" class="md-tabs__link">
         Development
       </a>
     </li>
@@ -242,7 +246,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../managed-service/" class="md-tabs__link">
+      <a href="../managed-service/index.html" class="md-tabs__link">
         Managed service
       </a>
     </li>
@@ -258,7 +262,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../self-hosting/" class="md-tabs__link">
+      <a href="../self-hosting/index.html" class="md-tabs__link">
         Self hosting
       </a>
     </li>
@@ -286,9 +290,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="ThymeSave Cookbook" class="md-nav__button md-logo" aria-label="ThymeSave Cookbook" data-md-component="logo">
+    <a href="../index.html" title="ThymeSave Cookbook" class="md-nav__button md-logo" aria-label="ThymeSave Cookbook" data-md-component="logo">
       
-  <img src="../../../../assets/images/logo.svg" alt="logo">
+  <img src="../assets/images/logo.svg" alt="logo">
 
     </a>
     ThymeSave Cookbook
@@ -316,7 +320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../index.html" class="md-nav__link">
         Home
       </a>
     </li>
@@ -329,12 +333,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -357,7 +363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../components/" class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         High level overview
       </a>
     </li>
@@ -371,186 +377,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../components/auth0/" class="md-nav__link">
+      <a href="auth0.html" class="md-nav__link">
         Auth0
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../components/couchdb/" class="md-nav__link">
-        CouchDB
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../components/funnel/" class="md-nav__link">
-        Funnel
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../components/silverware/" class="md-nav__link">
-        Silverware
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          Development
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Development" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Development
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../" class="md-nav__link">
-        General
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3_2">
-          Silverware
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Silverware" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_2">
-          <span class="md-nav__icon md-icon"></span>
-          Silverware
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
-        General
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_2" type="checkbox" id="__nav_3_2_2" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3_2_2">
-          Extend
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Extend" data-md-level="3">
-        <label class="md-nav__title" for="__nav_3_2_2">
-          <span class="md-nav__icon md-icon"></span>
-          Extend
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../add_ingredient/" class="md-nav__link">
-        Add new ingredient
       </a>
     </li>
   
@@ -573,12 +401,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Add new ingredient category
+          CouchDB
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Add new ingredient category
+      <a href="couchdb.html" class="md-nav__link md-nav__link--active">
+        CouchDB
       </a>
       
         
@@ -597,8 +425,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#walk-through" class="md-nav__link">
-    Walk through
+  <a href="#authentication" class="md-nav__link">
+    Authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-resources" class="md-nav__link">
+    Further resources
   </a>
   
 </li>
@@ -618,7 +460,275 @@
   
   
     <li class="md-nav__item">
-      <a href="../create_plugins/" class="md-nav__link">
+      <a href="funnel.html" class="md-nav__link">
+        Funnel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="silverware.html" class="md-nav__link">
+        Silverware
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Development
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Development" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Development
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/index.html" class="md-nav__link">
+        General
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          Funnel
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Funnel" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Funnel
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/funnel/index.html" class="md-nav__link">
+        General
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_2" type="checkbox" id="__nav_3_2_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2">
+          Extend
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Extend" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Extend
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/funnel/extend/plugins.html" class="md-nav__link">
+        Create new functionality using plugins
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          Silverware
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Silverware" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Silverware
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/silverware/index.html" class="md-nav__link">
+        General
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_2" type="checkbox" id="__nav_3_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_2">
+          Extend
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Extend" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Extend
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/silverware/extend/add_ingredient.html" class="md-nav__link">
+        Add new ingredient
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/silverware/extend/add_ingredient_category.html" class="md-nav__link">
+        Add new ingredient category
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/silverware/extend/create_plugins.html" class="md-nav__link">
         Create new functionality using plugins
       </a>
     </li>
@@ -680,7 +790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../managed-service/" class="md-nav__link">
+      <a href="../managed-service/index.html" class="md-nav__link">
         ThymeSave as managed service
       </a>
     </li>
@@ -728,7 +838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../self-hosting/" class="md-nav__link">
+      <a href="../self-hosting/index.html" class="md-nav__link">
         General
       </a>
     </li>
@@ -769,8 +879,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#walk-through" class="md-nav__link">
-    Walk through
+  <a href="#authentication" class="md-nav__link">
+    Authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-resources" class="md-nav__link">
+    Further resources
   </a>
   
 </li>
@@ -787,34 +911,38 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/thymesave/cookbook/edit/main/docs/development/silverware/extend/add_ingredient_category.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/thymesave/cookbook/edit/main/docs/components/couchdb.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="add-new-ingredient-category">Add new ingredient category</h1>
-<p>Ingredient categories are used to group ingredients together making it easier to organize and search.</p>
-<p>For most ingredients you will already find an appropriate category, but sometimes a new one might be required.</p>
-<h2 id="walk-through">Walk through</h2>
-<ol>
-<li>Add the category<ol>
-<li>Open <code>projects/thymesave/ingredients/src/lib/ingredients.ts</code></li>
-<li>At the top of the file you can see different categories, grouped together, and joined to a single batch of
-   categories</li>
-<li>Find the appropiate place and add your category</li>
-</ol>
-</li>
-<li>Now ThymeSave knows about the category, which is great!</li>
-<li>Let's go on and add translations, so it can be properly localized and displayed to users<ol>
-<li>Each language has its own folder and ingredient category translations maintained
-   in <code>projects/thymesave/translations/src/resources/&lt;language_code&gt;/ingredientCategories.ts</code></li>
-<li>Add a new key for your new category containing the localized name</li>
-<li>Make sure to add at least the english version of the ingredient category</li>
-</ol>
-</li>
-<li>Make sure you added the keys in alphabetical correct order, when linting passes you can create your PR</li>
-</ol>
+<h1 id="couchdb">CouchDB</h1>
+<p><a href="https://couchdb.apache.org/">CouchDB</a> is a clusterable, syncable document-based database system.</p>
+<p>In combination with <a href="https://pouchdb.com/">PouchDB</a> in the frontend and added authentication through funnel it is a
+robust offline-first solution.</p>
+<p>Its de facto the only solution that works for our use case and is free and open source.</p>
+<h2 id="authentication">Authentication</h2>
+<p>Authentication is offloaded at funnel. JWT configuration with CouchDB is everything but straight forward,
+and having a explicit reverse proxy gives greater control and reduces surface for attacks.</p>
+<p>e.g. limitation of the user to its own database already on request level</p>
+<blockquote>
+<p>This also means CouchDB should not be exposed over the network in any case, which
+would have fatal consequences due to basically an "admin party mode"</p>
+</blockquote>
+<h2 id="structure">Structure</h2>
+<p>Every use gets his own database. To do this funnel provides an init endpoint which checks if the user database already
+exists, if this is not the case one is created.</p>
+<ul>
+<li>Every user database is completely flat, allowing easier sync</li>
+<li>Document ids consist of entity type and id in format <code>entityType:uuid</code></li>
+<li>Document know their type stored in <code>$entityType</code></li>
+</ul>
+<h2 id="further-resources">Further resources</h2>
+<ul>
+<li><a href="https://couchdb.com/">CouchDB</a></li>
+<li><a href="https://pouchdb.com/">PouchDB</a></li>
+</ul>
 
               
             </article>
@@ -830,7 +958,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../add_ingredient/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Add new ingredient" rel="prev">
+        <a href="auth0.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Auth0" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -839,20 +967,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Add new ingredient
+              Auth0
             </div>
           </div>
         </a>
       
       
         
-        <a href="../create_plugins/" class="md-footer__link md-footer__link--next" aria-label="Next: Create new functionality using plugins" rel="next">
+        <a href="funnel.html" class="md-footer__link md-footer__link--next" aria-label="Next: Funnel" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Create new functionality using plugins
+              Funnel
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -865,6 +993,10 @@
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; ThymeSave Team and Community
+    </div>
   
   
     Made with
@@ -882,10 +1014,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.tracking"], "search": "../../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.tracking"], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
     
   </body>
