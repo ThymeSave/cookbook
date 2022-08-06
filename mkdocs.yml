@@ -20,21 +20,6 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.tracking
-  palette:
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: teal
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: teal
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
 
 markdown_extensions:
   - pymdownx.superfences:
@@ -45,3 +30,6 @@ markdown_extensions:
 
 plugins:
   - search
+
+extra_css:
+  - stylesheets/extra.css
