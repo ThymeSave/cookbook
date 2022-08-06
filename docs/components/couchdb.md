@@ -17,6 +17,15 @@ e.g. limitation of the user to its own database already on request level
 > This also means CouchDB should not be exposed over the network in any case, which
 > would have fatal consequences due to basically an "admin party mode"
 
+## Structure
+
+Every use gets his own database. To do this funnel provides an init endpoint which checks if the user database already
+exists, if this is not the case one is created.
+
+- Every user database is completely flat, allowing easier sync
+- Document ids consist of entity type and id in format `entityType:uuid`
+- Document know their type stored in `$entityType`
+
 ## Further resources
 
 - [CouchDB](https://couchdb.com/)

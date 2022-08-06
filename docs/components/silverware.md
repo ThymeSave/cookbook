@@ -35,8 +35,11 @@ To round the angular toolbox also Angular Flex is used, providing Flexbox layout
     - is split into components where suitable
     - utilizes best practices where ever it makes sense, we keep it open to make own design decisions that might not be
       compliant with "the angular way"
-- We use observables (RxJS) and TypeScript features where ever possible
+- Use observables (RxJS) and TypeScript features where ever possible
     - promises are just used e.g. in plugins to make the entry easier for plugin developers OR if not otherwise possible
+- Plugin-architecture from the beginning allowing easy extension of the system without going into much detail about the UI
+  - allows developers with almost no experience to extend and contribute
+  - keeps the core small and maintainable
 
 ## Further resources
 
