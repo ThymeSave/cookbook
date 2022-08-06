@@ -17,7 +17,7 @@
     
     
       
-        <title>High level overview - ThymeSave Cookbook</title>
+        <title>Colors - ThymeSave Cookbook</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#high-level-overview" class="md-skip">
+        <a href="#colors" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              High level overview
+              Colors
             
           </span>
         </div>
@@ -182,15 +182,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="index.html" class="md-tabs__link md-tabs__link--active">
+      <a href="../components/index.html" class="md-tabs__link">
         Components
       </a>
     </li>
@@ -200,13 +198,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../design/index.html" class="md-tabs__link">
+      <a href="index.html" class="md-tabs__link md-tabs__link--active">
         Design
       </a>
     </li>
@@ -325,14 +325,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
@@ -353,21 +351,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../components/index.html" class="md-nav__link">
         High level overview
       </a>
-      
     </li>
   
 
@@ -379,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="auth0.html" class="md-nav__link">
+      <a href="../components/auth0.html" class="md-nav__link">
         Auth0
       </a>
     </li>
@@ -393,7 +381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="couchdb.html" class="md-nav__link">
+      <a href="../components/couchdb.html" class="md-nav__link">
         CouchDB
       </a>
     </li>
@@ -407,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="funnel.html" class="md-nav__link">
+      <a href="../components/funnel.html" class="md-nav__link">
         Funnel
       </a>
     </li>
@@ -421,7 +409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="silverware.html" class="md-nav__link">
+      <a href="../components/silverware.html" class="md-nav__link">
         Silverware
       </a>
     </li>
@@ -441,12 +429,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -469,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/index.html" class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         General
       </a>
     </li>
@@ -481,11 +471,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../design/colors.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="colors.html" class="md-nav__link md-nav__link--active">
         Colors
       </a>
+      
     </li>
   
 
@@ -497,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/logo.html" class="md-nav__link">
+      <a href="logo.html" class="md-nav__link">
         Logo
       </a>
     </li>
@@ -905,27 +905,61 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/thymesave/cookbook/edit/main/docs/components/index.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/thymesave/cookbook/edit/main/docs/design/colors.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="high-level-overview">High level overview</h1>
-<p>ThymeSave consists of:</p>
-<ul>
-<li><a href="funnel.html">funnel</a> - Backend proxy functionality and configuration</li>
-<li><a href="silverware.html">silverware</a> - Frontend application, npm packages, builtin plugins</li>
-<li><a href="couchdb.html">CouchDB</a> - Persisting data and syncing with PouchDB in frontend</li>
-<li><a href="auth0.html">Auth0</a> - Managed OAuth2 service for authentication and authorization</li>
-</ul>
-<p>The communication hierarchy is like this:</p>
-<pre class="mermaid"><code>graph TD;
-silverware--&gt;funnel
-silverware---&gt;Auth0
-funnel--&gt;CouchDB[CouchDB Cluster]
-funnel--&gt;External_Websites[External websites]
-funnel--&gt;Auth0</code></pre>
+<h1 id="colors">Colors</h1>
+<p>List of colors:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Color Code</th>
+<th align="left">Sample</th>
+<th align="left">Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>#2c2c2c</code></td>
+<td align="left"><div class="color-tile" style="background-color:#2c2c2c;"></div></td>
+<td align="left">background color</td>
+</tr>
+<tr>
+<td align="left"><code>#5c5c5c</code></td>
+<td align="left"><div class="color-tile" style="background-color:#5c5c5c;"></div></td>
+<td align="left">accent color</td>
+</tr>
+<tr>
+<td align="left"><code>#0c7c5c</code></td>
+<td align="left"><div class="color-tile" style="background-color:#0c7c5c;"></div></td>
+<td align="left">navbar background</td>
+</tr>
+<tr>
+<td align="left"><code>#37caa0</code></td>
+<td align="left"><div class="color-tile" style="background-color:#37caa0;"></div></td>
+<td align="left">links, buttons, text that should draw attention e.g. a click to action</td>
+</tr>
+<tr>
+<td align="left"><code>#FFFFFF</code></td>
+<td align="left"><div class="color-tile" style="background-color:#ffffff;"></div></td>
+<td align="left">text color</td>
+</tr>
+<tr>
+<td align="left"><code>#c93c37</code></td>
+<td align="left"><div class="color-tile" style="background-color:#c93c37;"></div></td>
+<td align="left">dark color for warnings</td>
+</tr>
+<tr>
+<td align="left"><code>#FF9D9D</code></td>
+<td align="left"><div class="color-tile" style="background-color:#FF9D9D;"></div></td>
+<td align="left">light color for warnings</td>
+</tr>
+</tbody>
+</table>
+<p>These colors are reused across documentation, applications etc.</p>
 
               
             </article>
@@ -941,7 +975,7 @@ funnel--&gt;Auth0</code></pre>
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: General" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -950,20 +984,20 @@ funnel--&gt;Auth0</code></pre>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Home
+              General
             </div>
           </div>
         </a>
       
       
         
-        <a href="auth0.html" class="md-footer__link md-footer__link--next" aria-label="Next: Auth0" rel="next">
+        <a href="logo.html" class="md-footer__link md-footer__link--next" aria-label="Next: Logo" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Auth0
+              Logo
             </div>
           </div>
           <div class="md-footer__button md-icon">
