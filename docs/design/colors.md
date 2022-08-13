@@ -1,15 +1,32 @@
 # Colors
 
-List of colors:
+## Color Scheme
 
-| Color Code | Sample                                                           | Usage                                                                  |
-|:-----------|:-----------------------------------------------------------------|:-----------------------------------------------------------------------|
-| `#2c2c2c`  | <div class="color-tile" style="background-color:#2c2c2c;"></div> | background color                                                       |
-| `#5c5c5c`  | <div class="color-tile" style="background-color:#5c5c5c;"></div> | accent color                                                           |
-| `#0c7c5c`  | <div class="color-tile" style="background-color:#0c7c5c;"></div> | navbar background                                                      |                                        |
-| `#37caa0`  | <div class="color-tile" style="background-color:#37caa0;"></div> | links, buttons, text that should draw attention e.g. a click to action |
-| `#FFFFFF`  | <div class="color-tile" style="background-color:#ffffff;"></div> | text color                                                             |
-| `#c93c37`  | <div class="color-tile" style="background-color:#c93c37;"></div> | dark color for warnings                                                |
-| `#FF9D9D`  | <div class="color-tile" style="background-color:#FF9D9D;"></div> | light color for warnings                                               |
+General color scheme reused across the entire application
 
-These colors are reused across documentation, applications etc.
+![Color Scheme](../assets/images/palette/01%20Color%20Scheme.svg){: style="width:80%;margin:auto;display:block;"}
+
+## Primary
+
+### Color and shadings
+
+![Color and shadings](../assets/images/palette/Primary.svg)
+
+### Emphasis
+
+![Emphasis](../assets/images/palette/On%20Primary.svg)
+
+## Secondary
+
+### Color and shadings
+
+![Color and shadings](../assets/images/palette/Secondary.svg)
+
+### Emphasis
+
+![Emphasis](../assets/images/palette/On%20Surface.svg)
+
+
+## Outlines (borders)
+
+![Outlines (borders)](../assets/images/palette/Outline.svg){: style="background:var(--md-code-bg-color);padding:10px;"}
