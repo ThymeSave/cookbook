@@ -5,7 +5,7 @@
     --md-default-fg-color--light: white;
     --md-default-fg-color--lighter: white;
     --md-accent-fg-color: white;
-    --md-typeset-a-color: #37caa0;
+    --md-typeset-a-color: #1d9e79;
     --md-code-bg-color: rgba(255, 255, 255, .8);
     --md-text-font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -16,7 +16,7 @@
 
 .md-header,
 .md-tabs {
-    background: #0c7c5c;
+    background: #177e60;
 }
 
 table img {
