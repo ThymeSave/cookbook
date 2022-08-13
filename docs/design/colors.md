@@ -4,6 +4,9 @@
 
 General color scheme reused across the entire application
 
+> Since these are exports from figma where we work with a light theme approach
+> please make sure to invert the colors accordingly (so always use light text on dark background etc.)
+
 ![Color Scheme](../assets/images/palette/01%20Color%20Scheme.svg){: style="width:80%;margin:auto;display:block;"}
 
 ## Primary

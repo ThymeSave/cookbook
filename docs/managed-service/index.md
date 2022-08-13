@@ -4,28 +4,28 @@ Not everyone is able to or wants to host the entire platform for private usage.
 
 So here comes the free offer. Use the ready to use platform, with no tracking, and fully managed updates etc.
 
-We will do our best to provide a stable, high available platform. But since it is not our day job we cant give you an
+We will do our best to provide a stable, high available platform. But since it is not our day job, we can't give you a
 binding agreement.
 
 ## Service level agreements
 
-We cant and won't provide a service level agreement like a guaranteed uptime. Since the app is built offline-first this
+We can't and won't provide a service level agreement like a guaranteed uptime. Since the app is built offline-first this
 should also not be a problem in the first place. Since the architecture itself is built with scalability and
-availability as one of the top priorities this should rarely be the case regardless.
+availability as one of the top priorities, this should rarely be the case regardless.
 
 ## Provider
 
 ### Funnel & CouchDB
 
-Currently, the Oracle Cloud Free Tier is used for CouchDB & funnel, which allows to run it as a cloud based service completely for free.
+Currently, the Oracle Cloud Free Tier is used for CouchDB & funnel, which allows running it as a cloud based service
+completely for free.
 
 We are really not happy with Oracle because of the terrible support and limits, so if you like the project and want to
-help
-us feel free to suggest other solutions/providers!
+help us, feel free to suggest other solutions/providers!
 
 ### Silverware
 
-For silverware we use the awesome CloudFlare Pages providing preview environments and also power the live page!
+For silverware, we use the awesome CloudFlare Pages providing preview environments and also power the live page!
 
 ## Disclaimer
 

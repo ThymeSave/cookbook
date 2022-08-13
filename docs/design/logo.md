@@ -14,7 +14,7 @@ If it is not possible to ensure this, please use the flat logo.
 
 There is no limit on how big the logo can or should be.
 
-To make sure it is readable do not go under the size where the leaves are no longer visible. Exceptions for this are fav
+To make sure it is readable, do not go under the size where the leaves are no longer visible. Exceptions for this are fav
 icons etc. where there are technical constraints.
 
 Always make sure to keep the square aspect ratio for the logo!

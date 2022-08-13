@@ -18,16 +18,16 @@ The frontend is completely written in TypeScript and Angular.
 Angular is a battle proven framework we use it in combination with Angular Material, which provides great accessibility
 and a few handy components out of the box.
 
-Also, with Material Design we already have a design system that works and don't have to reinvent the wheel.
+Also, with Material Design, we already have a design system that works and don't have to reinvent the wheel.
 
-To round the angular toolbox also Angular Flex is used, providing Flexbox layouts via directives.
+To round the angular toolbox, Angular Flex is also used, providing Flexbox layouts via directives.
 
 ## Basic concepts / ideology
 
 - Don't cache database stuff explicitly
     - PouchDB is used as storage layer which gives great performance with IndexedDB
     - A store layer is explicitly not added, reducing complexity and possible points of failures
-- The npm packages
+- The NPM packages
     - are as loosely coupled as possible
     - have high test coverage, covering also most edge cases
 - The angular part
@@ -35,11 +35,12 @@ To round the angular toolbox also Angular Flex is used, providing Flexbox layout
     - is split into components where suitable
     - utilizes best practices where ever it makes sense, we keep it open to make own design decisions that might not be
       compliant with "the angular way"
-- Use observables (RxJS) and TypeScript features where ever possible
+- Use Observables (RxJS) and TypeScript features where ever possible
     - promises are just used e.g. in plugins to make the entry easier for plugin developers OR if not otherwise possible
-- Plugin-architecture from the beginning allowing easy extension of the system without going into much detail about the UI
-  - allows developers with almost no experience to extend and contribute
-  - keeps the core small and maintainable
+- Plugin-architecture from the beginning, allowing easy extension of the system without going into much detail about the
+  UI
+    - allows developers with almost no experience to extend and contribute
+    - keeps the core small and maintainable
 
 ## Further resources
 
