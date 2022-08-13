@@ -15,6 +15,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
   logo: assets/images/logo.svg
+  favicon: assets/images/favicon.ico
   name: material
   features:
     - navigation.instant
