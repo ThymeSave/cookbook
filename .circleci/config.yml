@@ -6,7 +6,7 @@ executors:
       - image: cimg/node:lts
   python:
     docker:
-      - image: cimg/python:3.9
+      - image: cimg/python:3.10
 
 jobs:
   build:
